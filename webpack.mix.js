@@ -13,9 +13,9 @@ require('laravel-mix-polyfill');
  |
  */
 
- let theme = process.env.MIX_THEME_NAME;
- let public = `${process.env.MIX_PUBLIC_DIR}/wp-content`;
- let virtualHost = `https://${process.env.MIX_SITE_URL}`;
+ const theme = process.env.MIX_THEME_NAME;
+ const public = `${process.env.MIX_PUBLIC_DIR}/wp-content`;
+ const virtualHost = `https://${process.env.MIX_SITE_URL}`;
 
 mix.js(`src/js/app.js`, `${public}/themes/${theme}/js/app.js`)
 .options({
